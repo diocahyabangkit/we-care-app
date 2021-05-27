@@ -15,7 +15,7 @@
                                             <div class="table-responsive">
                                                 <table id="table-users-app" class="table table-striped table-bordered table-hover">
                                                     <thead>
-                                                        <tr>
+                                                        <tr class="text-center">
                                                             <th>No</th>
                                                             <th>Name</th>  
                                                             <th>NIK</th>
@@ -29,13 +29,13 @@
                                                         $no = 1;
                                                         foreach($data_users as $data):
                                                     ?>
-                                                        <tr>
+                                                        <tr class="text-center">
                                                             <td><?= $no++ ?></td>
                                                             <td><?= $data['name']?></td>
                                                             <td><?= $data['nik']?></td>
                                                             <td><?= $data['status']?></td>
                                                             <td>
-                                                                <a href="<?= base_url('Pages/Data_users_c/detail_user/').$data['id'];?>"><button class="btn-success">Detail</button></a>
+                                                                <a href="<?= base_url('Pages/Data_users_c/detail_user/').$data['id'];?>"><button class="btn-success">Detail User</button></a>
                                                             </td>
                                                             <td>
                                                                 <a href="<?= base_url('Pages/Data_users_c/detail_pengaduan/').$data['id'];?>"><button class="btn-primary">Detail</button></a>
