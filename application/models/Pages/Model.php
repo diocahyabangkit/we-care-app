@@ -7,8 +7,13 @@
         }
 
         public function data_users_app(){
-            $this->db->select('*');
             return $this->db->get('users-app')->result_array();
+        }
+
+
+        // Page Data Pengaduan
+        public function data_pengaduan(){
+            return $this->db->get('pengaduan')->result_array();
         }
     }
 
