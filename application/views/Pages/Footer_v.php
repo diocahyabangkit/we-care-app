@@ -29,6 +29,11 @@
             $(document).ready(function() {
                 $('#table-pengaduan').DataTable();
             } );
+
+            $(document).ready(function(){
+                $('#table-users-app').DataTable();
+            });
+
         </script>
 
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.36/pdfmake.min.js"></script>
