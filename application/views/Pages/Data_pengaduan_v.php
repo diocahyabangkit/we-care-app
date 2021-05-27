@@ -17,7 +17,7 @@
                                                 <table id="table-pengaduan" class="table table-striped table-bordered table-hover" >
                                                     <thead>
                                                         <tr>
-                                                            <th>Id User</th>
+                                                            <th>Id Pengaduan</th>
                                                             <th>Name</th>
                                                             <th>Status Pelapor</th>
                                                             <th>Jenis Kekerasan</th>
@@ -32,14 +32,14 @@
                                                         foreach($data as $datas):
                                                     ?>
                                                         <tr>
-                                                            <td><?= $datas['id_user']?></td>
+                                                            <td><?= $datas['id']?></td>
                                                             <td><?= $datas['nama']?></td>
                                                             <td><?= $datas['status_pelapor']?></td>
                                                             <td><?= $datas['jns_kekerasan']?></td>
                                                             <td><?= $datas['tgl_kejadian']?></td>
                                                             <td><?= $datas['status']?></td>
                                                             <td>
-                                                                <button class="btn-success">Detail</button>
+                                                                <a href="<?= base_url('Pages/Data_pengaduan_c/Detail_pengaduan/').$datas['id'];?>"><button class="btn-success">Detail</button></a>
                                                             </td>
                                                         </tr>
                                                     <?php endforeach;?>
