@@ -25,6 +25,12 @@
         public function detail_pengaduan_idUsers($id){
             return $this->db->get_where('pengaduan',['id_user'=> $id])->result_array();
         }
+
+        // Page Detail User
+        public function detail_user($id){
+            return $this->db->get_where('users-app',['id'=>$id])->result_array();
+        }
+        
     }
 
 ?>
