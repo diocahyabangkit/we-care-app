@@ -16,4 +16,20 @@ class Data_pengaduan_c extends CI_Controller {
         $this->load->view('Pages/Data_pengaduan_v',$data);
         $this->load->view('Pages/Footer_v',$data);
     }
+
+    public function detail_pengaduan($id){
+        $data['user'] = $_SESSION;
+        $data['title'] = "Data Pengaduan";
+        $data['title2'] = "Detail Pengaduan User";
+        $detail = $this->Model->detail_pengaduan_id($id);
+        
+        foreach($detail as $d ):
+            $data['detail'] = $d;
+        endforeach;
+
+        $this->load->view('Pages/Header_v',$data);
+        $this->load->view('Pages/Detail_pengaduan_v',$data);
+        $this->load->view('Pages/Footer_v',$data);
+    }
+
 }
