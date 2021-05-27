@@ -15,6 +15,11 @@
         public function data_pengaduan(){
             return $this->db->get('pengaduan')->result_array();
         }
+
+        // Page Detail Pengaduan per ID_pengaduan
+        public function detail_pengaduan_id($id){
+            return $this->db->get_where('pengaduan',['id'=> $id])->result_array();
+        }
     }
 
 ?>
