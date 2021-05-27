@@ -31,6 +31,17 @@ class Data_users_c extends CI_Controller {
     }
 
     public function detail_user($id){
+        $data['user'] = $_SESSION;
+        $data['title'] = "Data Users";
+        $data['title2'] = "Detail User";
+        $detail = $this->Model->detail_user($id);
+        
+        foreach($detail as $d ):
+            $data['detail'] = $d;
+        endforeach;
 
+        $this->load->view('Pages/Header_v',$data);
+        $this->load->view('Pages/Detail_user_v',$data);
+        $this->load->view('Pages/Footer_v',$data);
     }
 }
