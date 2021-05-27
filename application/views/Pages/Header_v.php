@@ -64,7 +64,7 @@
 
                                 <li <?php if($title == 'Data Pengaduan'):?> class="active"<?php endif;?>>
                                     <a href="<?= base_url('Pages/Data_pengaduan_c')?>">
-                                        <i class="fa fa-users"></i> Data Pengaduan </a>
+                                        <i class="fa fa-users"></i> Data Pengaduan</a>
                                 </li>
 
                                 <li>
