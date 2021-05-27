@@ -62,6 +62,11 @@
                                         <i class="fa fa-users"></i> Data Users </a>
                                 </li>
 
+                                <li <?php if($title == 'Data Pengaduan'):?> class="active"<?php endif;?>>
+                                    <a href="<?= base_url('Pages/Data_pengaduan_c')?>">
+                                        <i class="fa fa-users"></i> Data Pengaduan </a>
+                                </li>
+
                                 <li>
                                     <a href="">
                                         <i class="fa fa-th-large"></i> Items Manager <i class="fa arrow"></i>
