@@ -16,7 +16,7 @@
                                             <div class="table-responsive">
                                                 <table id="table-pengaduan" class="table table-striped table-bordered table-hover" >
                                                     <thead>
-                                                        <tr>
+                                                        <tr class="text-center">
                                                             <th>No</th>
                                                             <th>Id Pengaduan</th>
                                                             <th>Name</th>
@@ -32,7 +32,7 @@
                                                         $no = 1;
                                                         foreach($details as $data):
                                                     ?>
-                                                        <tr>
+                                                        <tr class="text-center">
                                                             <td><?= $no++?></td>
                                                             <td><?= $data['id_user']?></td>
                                                             <td><?= $data['nama']?></td>
