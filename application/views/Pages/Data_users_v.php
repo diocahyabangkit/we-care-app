@@ -17,14 +17,11 @@
                                                     <thead>
                                                         <tr>
                                                             <th>No</th>
-                                                            <th>Name</th>
-                                                            <th>Email</th>  
+                                                            <th>Name</th>  
                                                             <th>NIK</th>
-                                                            <th>NO KK</th>
-                                                            <th>Address</th>
-                                                            <th>Gender</th>
-                                                            <th>Foto</th>
                                                             <th>Status</th>
+                                                            <th>Detail User</th>
+                                                            <th>Detail Pengaduan</th>
                                                         </tr>
                                                     </thead>
                                                     <tbody>
@@ -35,13 +32,14 @@
                                                         <tr>
                                                             <td><?= $no++ ?></td>
                                                             <td><?= $data['name']?></td>
-                                                            <td><?= $data['email']?></td>
                                                             <td><?= $data['nik']?></td>
-                                                            <td><?= $data['no-kk']?></td>
-                                                            <td><?= $data['address']?></td>
-                                                            <td><?= $data['gender']?></td>
-                                                            <td><?= $data['foto']?></td>
                                                             <td><?= $data['status']?></td>
+                                                            <td>
+                                                                <a href="<?= base_url('Pages/Data_users_c/detail_user/').$data['id'];?>"><button class="btn-success">Detail</button></a>
+                                                            </td>
+                                                            <td>
+                                                                <a href="<?= base_url('Pages/Data_users_c/detail_pengaduan/').$data['id'];?>"><button class="btn-primary">Detail</button></a>
+                                                            </td>
                                                         </tr>
                                                     <?php endforeach;?>
                                                     </tbody>
