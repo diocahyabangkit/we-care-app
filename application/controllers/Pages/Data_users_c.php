@@ -17,4 +17,20 @@ class Data_users_c extends CI_Controller {
         $this->load->view('Pages/Data_users_v',$data);
         $this->load->view('Pages/Footer_v',$data);
     }
+
+    public function detail_pengaduan($id){
+        $data['user'] = $_SESSION;
+        $data['title'] = "Data Users";
+        $data['title2'] = "Detail Pengaduan User";
+        $data['details'] = $this->Model->detail_pengaduan_idUsers($id);
+
+        $this->load->view('Pages/Header_v',$data);
+        $this->load->view('Pages/Detail_pengaduan_idUser_v',$data);
+        $this->load->view('Pages/Footer_v',$data);
+
+    }
+
+    public function detail_user($id){
+
+    }
 }
