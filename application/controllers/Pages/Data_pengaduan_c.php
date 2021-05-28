@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Data_pengaduan_c extends CI_Controller {
+class Data_pengaduan_c extends MY_Controller {
 
     function __construct(){
         parent::__construct();
