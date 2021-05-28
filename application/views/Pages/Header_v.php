@@ -76,7 +76,7 @@
                                         <i class="fa fa-book"></i> Data Pengaduan</a>
                                 </li>
 
-                                <li>
+                                <!-- <li>
                                     <a href="">
                                         <i class="fa fa-th-large"></i> Items Manager <i class="fa arrow"></i>
                                     </a>
@@ -88,7 +88,7 @@
                                             <a href="item-editor.html"> Item Editor </a>
                                         </li>
                                     </ul>
-                                </li>
+                                </li> -->
                             </ul>
                         </nav>
                     </div>
