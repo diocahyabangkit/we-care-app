@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Dashboard_c extends CI_Controller {
+class Dashboard_c extends MY_Controller {
 
     public function index(){
         $data['user'] = $_SESSION;
