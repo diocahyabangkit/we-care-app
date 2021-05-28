@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Profile_c extends CI_Controller {
+class Profile_c extends MY_Controller {
     public function __construct(){
         parent::__construct();
             $this->load->model('Pages/Model');
