@@ -26,7 +26,8 @@ class Auth_c extends CI_Controller {
             if(password_verify($password,$user['password'])){
                 $data = [
                     'email-user' => $email,
-                    'name-user' => $user['name-user']
+                    'name-user' => $user['name-user'],
+                    'isLogged' => TRUE
                 ];
                 $this->session->set_userdata($data);
                 redirect('Pages/Dashboard_c');
@@ -69,8 +70,7 @@ class Auth_c extends CI_Controller {
 
 // Logout
     public function Logout(){
-        $this->session->unset_userdata('email-user');
-        $this->session->unset_userdata('name-user');
+        $this->session->sess_destroy();
         redirect('Auth_c');
     }
 
