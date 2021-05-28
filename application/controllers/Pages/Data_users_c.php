@@ -3,7 +3,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 use chriskacerguis\RestServer\RestController;
 
-class Data_users_c extends CI_Controller {
+class Data_users_c extends MY_Controller {
     public function __construct(){
         parent::__construct();
             $this->load->model('Pages/Model');
