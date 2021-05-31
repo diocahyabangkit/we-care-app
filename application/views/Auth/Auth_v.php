@@ -28,9 +28,9 @@
                             <div class="form-group">
                                 <button type="submit" class="btn btn-block btn-primary">Login</button>
                             </div>
-                            <div class="form-group">
+                            <!-- <div class="form-group">
                                 <p class="text-muted text-center">Do not have an account? <a href="<?= base_url('Auth_c/Sign_up')?>">Sign Up</a></p>
-                            </div>
+                            </div> -->
                         </form>
                     </div>
                 </div>
