@@ -39,6 +39,7 @@ class Auth_c extends CI_Controller {
             }
         }else{
             // User Email Belum Terdaftar
+            $this->session->set_flashdata('msg','<script>Swal.fire("","sorry your username not regis","error")</script>');
             redirect('Auth_c');
         }
     }
